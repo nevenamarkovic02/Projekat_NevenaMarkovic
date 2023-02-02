@@ -37,7 +37,7 @@ public class FileEditor extends JDialog {
         buttonSave = new JButton();
         buttonClose =  new JButton();
         
-        directory = "/Users/predragjovicic/Desktop";
+        directory = "C:\\Users\\Nena\\Desktop\\Test";
     
         
         textAreaTop = new JTextArea();
@@ -169,7 +169,7 @@ public class FileEditor extends JDialog {
         // use a FileReader instead of a FileInputStream.
         try {
             file = new File(directory, filename); // Create a file object
-            in = new FileReader(file); // And a char stream to read it
+             in = new FileReader(file); // And a char stream to read it
             char[] buffer = new char[4096]; // Read 4K characters at a time
             int len; // How many chars read each time
             textArea.setText(""); // Clear the text area
